@@ -296,7 +296,7 @@ footer {
 }
 
 /*For small screen*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   body {
     margin: 0;
     padding: 0;
@@ -308,6 +308,8 @@ footer {
     overflow: hidden;
     background-color: #1f2937;
     color: #ffffff;
+    width: 100%;
+
   }
 
   header nav ul .right,
@@ -315,6 +317,8 @@ footer {
     text-align: center;
     float: none;
     background-color: #1f2937;
+    width: 100%;
+
   }
 
   header div a img {
