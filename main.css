@@ -1,0 +1,291 @@
+body,
+html {
+  background-color: #1f2937;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+
+body {
+  background-color: #1f2937;
+  color: white;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ~~ Top Navigation Bar ~~ */
+
+header {
+  overflow: hidden;
+  background-color: aliceblue;
+  color: #1f2937;
+}
+
+header div.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header div a img {
+  max-height: 55px;
+  float: left;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+header nav ul .right {
+  float: right;
+}
+
+header nav ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 25px;
+  text-decoration: none;
+  border-right: 1px solid #bbb;
+}
+
+li a:hover:not(.active) {
+  background-color: #d4d4d4;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+
+/* Section one */
+
+.section-one {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.section-one .textbox {
+  clear: both;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.section-one div .bold {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.section-one .message {
+  font-size: 16px;
+}
+
+.section-one div button {
+  background-color: #3882f6;
+  border: 1px solid #3882f6;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.section-one .img-left {
+  min-width: 50%;
+  padding-top: 50px;
+  height: auto;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.section-one .img-left img {
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 60%;
+  height: auto;
+}
+
+.section-2 {
+}
+.section-2 h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.section-2 .section-2-box {
+  background-color: #f1f1f1;
+
+  text-align: center;
+  display: flex;
+}
+
+.section-2 .section-2-box .box {
+  width: 100px;
+  margin: 10px;
+}
+
+.section-2 .section-2-box .box img {
+}
+
+.section-3 {
+  background-color: antiquewhite;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-3 .text {
+  color: black;
+  text-align: center;
+  text-justify: newspaper;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.section-3 .quote {
+  color: black;
+  text-align: right;
+  font-style: oblique;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.section-4 {
+  background-color: rgb(42, 42, 41);
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.section-4 .information {
+  text-align: right;
+  width: 45%;
+  float: left;
+  border: #04aa6d solid 1px;
+}
+
+.section-4 .sign {
+  float: left;
+  width: 45%;
+  text-align: left;
+  padding-left: 16px;
+  border: #04aa6d solid 1px;
+}
+.section-4 button {
+  background-color: #3882f6;
+  border: 1px solid #3882f6;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+footer {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+
+/*For small screen*/
+@media screen and (max-width: 1000px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    overflow: hidden;
+    background-color: #1f2937;
+    color: #ffffff;
+  }
+
+  header nav ul .right,
+  header nav ul {
+    text-align: center;
+    float: none;
+    background-color: #1f2937;
+  }
+
+  header div a img {
+    display: none;
+    
+  }
+
+  header nav ul li a {
+    color: white;
+  }
+
+  .section-one {
+    display: block;
+  }
+  .section-one .textbox {
+    text-align: center;
+  }
+
+  .section-one div .bold {
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .section-one .message {
+    font-size: 16px;
+  }
+
+  .section-one div button {
+    background-color: #3882f6;
+    border: 1px solid #3882f6;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .section-one .img-left {
+    padding-top: 50px;
+    height: auto;
+    
+  }
+
+  .section-one .img-left img {
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 100%;
+    height: auto;
+  }
+
+.section-4{
+    background-color: #d4d4d4;
+    color: #1f2937;
+    display: block;
+}
+
+footer{
+    background-color: #1f2937;
+    text-align: center;
+    color: white;
+}
+}
