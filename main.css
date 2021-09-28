@@ -172,18 +172,16 @@ li a:hover:not(.active) {
 
 .section-4 {
   background-color: rgb(42, 42, 41);
-  box-sizing: border-box;
   width: 100%;
-  font-size: 20px;
   padding-top: 20px;
-  padding-bottom: 50px;
-  text-align: center;
+  padding-bottom: 20px;
   overflow: hidden;
+  font-size: 16px;
 }
 
 .section-4 .information {
-  text-align: right;
-  width: 45%;
+  text-align: center;
+  width: 50%;
   float: left;
 }
 .section-4 .information .call{
@@ -200,7 +198,7 @@ li a:hover:not(.active) {
   background-color: #3882f6;
   border: 1px solid #3882f6;
   color: white;
-  padding: 16px;
+  padding: 3px 20px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -216,10 +214,6 @@ footer {
   padding: 10px;
 }
 
-/* For mobile phones: */
-[class*="section-one"] {
-  width: 100%;
-}
 
 /*For small screen*/
 @media screen and (max-width: 720px) {
@@ -304,8 +298,6 @@ footer {
     color: rgb(0, 17, 255);
   }
 }
-
-
 
 /*For small screen red*/
 @media screen and (max-width: 600px) {
@@ -425,8 +417,8 @@ footer {
 }
 
 
-/*For small screen*/
-@media screen and (max-width: 400px) {
+/*For small screen and footer Green*/
+@media screen and (max-width: 450px) {
   body {
     margin: 0;
     min-width: 100%;
@@ -500,7 +492,9 @@ footer {
   .section-4 {
     background-color: #d4d4d4;
     color: #1f2937;
-    display: block;
+    display: block;  
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   footer {
