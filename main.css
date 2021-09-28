@@ -2,7 +2,8 @@ body,
 html {
   background-color: #1f2937;
   font-family: Arial, Helvetica, sans-serif;
-  margin: auto;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -14,14 +15,13 @@ body {
 
 * {
   box-sizing: border-box;
+  
 }
 
 /* ~~ Top Navigation Bar ~~ */
 
 header {
-  overflow: hidden;
-  background-color: aliceblue;
-  color: #1f2937;
+  color: #ffffff;
 }
 
 header div.logo {
@@ -47,15 +47,15 @@ header nav ul .right {
 
 header nav ul li a {
   display: block;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 20px 25px;
   text-decoration: none;
-  border-right: 1px solid #bbb;
+  border-right: 1px solid rgb(29, 27, 27);
 }
 
 li a:hover:not(.active) {
-  background-color: #d4d4d4;
+  background-color: #2f2f2f;
 }
 
 .active {
@@ -114,7 +114,10 @@ li a:hover:not(.active) {
   height: auto;
 }
 
+/*Section*/
 .section-2 {
+  background-color: #848f8b;
+  padding: 40px;
 }
 .section-2 h2 {
   text-align: center;
@@ -123,40 +126,46 @@ li a:hover:not(.active) {
 }
 
 .section-2 .section-2-box {
-  background-color: #f1f1f1;
-
-  text-align: center;
+  align-items: center;
   display: flex;
+  justify-content: center;
 }
-
 .section-2 .section-2-box .box {
-  width: 100px;
-  margin: 10px;
+  width: 200px;
+  margin: 15px;
+}
+.section-2 .section-2-box .box p {
+  color: black;
+  font-size: 16px;
+  text-align: left;
+  padding: 2px;
 }
 
 .section-2 .section-2-box .box img {
+  width: 100%;
 }
 
 .section-3 {
-  background-color: antiquewhite;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 25px;
   padding-bottom: 50px;
+  background-color: #525252;
+
 }
 
 .section-3 .text {
-  color: black;
-  text-align: center;
+  color: rgb(255, 255, 255);
+  text-align: ce;
   text-justify: newspaper;
   font-style: italic;
   font-size: 20px;
 }
 
 .section-3 .quote {
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: right;
   font-style: oblique;
-  padding-right: 20px;
+  padding-right: 100px;
   font-size: 20px;
 }
 
@@ -165,7 +174,7 @@ li a:hover:not(.active) {
   box-sizing: border-box;
   width: 100%;
   font-size: 20px;
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 50px;
   text-align: center;
   overflow: hidden;
@@ -175,15 +184,16 @@ li a:hover:not(.active) {
   text-align: right;
   width: 45%;
   float: left;
-  border: #04aa6d solid 1px;
 }
-
+.section-4 .information .call{
+  font-size: 25px;
+}
 .section-4 .sign {
   float: left;
   width: 45%;
   text-align: left;
   padding-left: 16px;
-  border: #04aa6d solid 1px;
+  padding-top: 30px;
 }
 .section-4 button {
   background-color: #3882f6;
@@ -206,17 +216,15 @@ footer {
 
 /* For mobile phones: */
 [class*="section-one"] {
-    width: 100%;
-  }
+  width: 100%;
+}
 
-  
 /*For small screen*/
 @media screen and (max-width: 400px) {
   body {
     margin: 0;
     padding: 0;
     max-width: 100%;
-
   }
 
   header {
@@ -289,19 +297,20 @@ footer {
   }
 
   footer {
-    background-color: #1f2937;
+    background-color: #10e222;
     text-align: center;
     color: white;
   }
 }
 
 /*For small screen*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
   body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: auto;
+    text-align: center;
   }
 
   header {
@@ -309,7 +318,6 @@ footer {
     background-color: #1f2937;
     color: #ffffff;
     width: 100%;
-
   }
 
   header nav ul .right,
@@ -318,7 +326,6 @@ footer {
     float: none;
     background-color: #1f2937;
     width: 100%;
-
   }
 
   header div a img {
@@ -368,17 +375,41 @@ footer {
   .section-one .img-left img {
     margin-right: auto;
     margin-left: auto;
-    min-width: 100%;
+    width: 100%;
     height: auto;
   }
 
+  .section-2 {
+    background-color: #f2f2f3;
+    color: rgb(0, 0, 0);
+  }
+
+  .section-2 .section-2-box {
+    align-items: center;
+    display: block;
+    justify-content: center;
+  }
+  .section-2 .section-2-box .box {
+    width: 300px;
+    position:initial  
+  }
+  .section-2 .section-2-box .box p {
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .section-2 .section-2-box .box img {
+    width: 100%;
+  }
+  
   .section-4 {
     background-color: #d4d4d4;
     color: #1f2937;
     display: block;
     width: 100%;
     text-align: center;
-
   }
 
   footer {
