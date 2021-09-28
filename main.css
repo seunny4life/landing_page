@@ -24,14 +24,10 @@ header {
   color: #ffffff;
 }
 
-header div.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-header div a img {
+header .logo a img{
   max-height: 55px;
   float: left;
+  padding-top: 2px;
 }
 
 header nav ul {
