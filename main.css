@@ -129,10 +129,11 @@ li a:hover:not(.active) {
   align-items: center;
   display: flex;
   justify-content: center;
+  gap: 16px;
+
 }
 .section-2 .section-2-box .box {
   width: 200px;
-  margin: 15px;
 }
 .section-2 .section-2-box .box p {
   color: black;
@@ -303,119 +304,3 @@ footer {
   }
 }
 
-/*For small screen*/
-@media screen and (max-width: 700px) {
-  body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-    text-align: center;
-  }
-
-  header {
-    overflow: hidden;
-    background-color: #1f2937;
-    color: #ffffff;
-    width: 100%;
-  }
-
-  header nav ul .right,
-  header nav ul {
-    text-align: center;
-    float: none;
-    background-color: #1f2937;
-    width: 100%;
-  }
-
-  header div a img {
-    display: none;
-  }
-
-  header nav ul li a {
-    color: white;
-  }
-
-  .section-one {
-    display: block;
-    width: 100%;
-  }
-  .section-one .textbox {
-    text-align: center;
-  }
-
-  .section-one div .bold {
-    font-size: 40px;
-    font-weight: bolder;
-    text-align: center;
-  }
-
-  .section-one .message {
-    font-size: 16px;
-  }
-
-  .section-one div button {
-    background-color: #3882f6;
-    border: 1px solid #3882f6;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    width: 100px;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    display: inline-block;
-  }
-
-  .section-one .img-left {
-    padding-top: 50px;
-    height: auto;
-  }
-
-  .section-one .img-left img {
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    height: auto;
-  }
-
-  .section-2 {
-    background-color: #f2f2f3;
-    color: rgb(0, 0, 0);
-  }
-
-  .section-2 .section-2-box {
-    align-items: center;
-    display: block;
-    justify-content: center;
-  }
-  .section-2 .section-2-box .box {
-    width: 300px;
-    position:initial  
-  }
-  .section-2 .section-2-box .box p {
-    color: black;
-    font-size: 16px;
-    text-align: left;
-    padding: 10px;
-  }
-  
-  .section-2 .section-2-box .box img {
-    width: 100%;
-  }
-  
-  .section-4 {
-    background-color: #d4d4d4;
-    color: #1f2937;
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
-  footer {
-    background-color: #b11a1a;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    width: 100%;
-  }
-}
